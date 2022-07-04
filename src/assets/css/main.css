@@ -1,0 +1,710 @@
+@charset "UTF-8";
+/*-- Google Font --*/
+
+/*chips*/
+@import 'chip.css';
+/*-- Common Style --*/
+
+@font-face {
+  font-family: 'Zilap Africa';
+  src: url('../fonts/Zilap.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Andreas';
+  src: url('../fonts/Andreas.ttf') format('truetype');
+}
+
+:root {
+  --primary-color: #ffbc01;
+  --secondary-color: #000000;
+  --accent-color: #e6fff1;
+  --text-color: #fff;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Zilap Africa';
+}
+body > div {
+  overflow-x: hidden;
+}
+
+body {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 52%,
+    rgba(19, 19, 19, 0.979540278402607) 100%
+  );
+  line-height: 24px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  visibility: visible;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text-color);
+  position: relative;
+  overflow-x: hidden;
+  margin-top: 0px;
+}
+
+@media only screen and (min-width: 767px) {
+  .roadmap-contents p,
+  .goal p {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 796px) {
+  body {
+  }
+  .sango .back-text {
+    top: 3.9rem !important;
+    font-size: 5rem !important;
+  }
+  .sango-card {
+    font-size: 0.5rem !important;
+    width: 4.5rem !important;
+    height: 5rem !important;
+  }
+  .sango-card h2 {
+    font-weight: 600;
+    font-size: 1.2rem !important;
+    margin-bottom: 0rem !important;
+    line-height: 1.9rem !important;
+  }
+  .sango-card p {
+    font-weight: 500;
+    font-size: 0.8rem;
+    margin-top: 0rem !important;
+    line-height: 1.4rem !important;
+  }
+  .spirit-intro {
+    font-weight: 700;
+    font-size: 4rem !important;
+    line-height: 1.1rem !important;
+    padding-left: 0rem !important;
+  }
+  .spirit-intro2 {
+    font-size: 6rem !important;
+    line-height: 10rem !important;
+    font-weight: 700;
+  }
+  .spirit-intro span {
+    font-size: 25vw !important;
+  }
+  .home-slider-item {
+    height: 110px !important;
+    width: 120px !important;
+    border-radius: 10px;
+    background-color: transparent;
+  }
+}
+@media only screen and (max-width: 575px) {
+  body {
+  }
+  .sango .back-text {
+    position: absolute;
+    top: 3.5rem !important;
+    text-align: center;
+    width: 100%;
+    z-index: -1;
+    font-family: 'zilap africa';
+    color: var(--primary-color);
+    font-size: 3rem !important;
+    font-weight: 800;
+  }
+  .sango-card {
+    margin-right: 0.8rem !important;
+    font-size: 0.5rem !important;
+    width: 2.5rem !important;
+    height: 3rem !important;
+    display: grid;
+    place-items: top !important;
+  }
+  .sango-card h2 {
+    font-weight: 600;
+    font-size: 0.5rem !important;
+    margin-bottom: 0rem !important;
+    line-height: 1.3rem !important;
+  }
+  .sango-card p {
+    font-weight: 500;
+    font-size: 0.5rem;
+    margin-top: 0rem !important;
+    line-height: 0.7rem !important;
+  }
+}
+@media only screen and (max-width: 479px) {
+  body {
+    overflow-x: hidden;
+  }
+  .hero-section {
+    margin-top: 20px !important;
+  }
+  .email-contact-section {
+    margin-top: 20px !important;
+  }
+  .home-slider {
+    margin-top: 20px !important;
+  }
+  .spirit-intro {
+    font-weight: 700;
+    font-size: 4rem !important;
+    line-height: 1.1rem !important;
+    padding-left: 0rem !important;
+  }
+  .spirit-intro2 {
+    font-size: 4rem !important;
+    line-height: 7rem !important;
+    font-weight: 700;
+  }
+  .sango .back-text {
+    position: absolute;
+    top: 3.5rem !important;
+    text-align: center;
+    width: 100%;
+    z-index: -1;
+    font-family: 'zilap africa';
+    color: var(--primary-color);
+    font-size: 3rem !important;
+    font-weight: 800;
+  }
+  .sango .front-cards {
+    position: absolute;
+    bottom: 0.2rem;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    z-index: 3;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .sango-card {
+    margin-right: 1rem !important;
+    font-size: 0.5rem !important;
+    width: 3rem !important;
+    height: 3.5rem !important;
+    display: grid;
+    place-items: top !important;
+  }
+  .sango-card h2 {
+    font-weight: 600;
+    font-size: 0.7rem !important;
+    margin-bottom: 0rem !important;
+    line-height: 2rem !important;
+  }
+  .sango-card p {
+    font-weight: 500;
+    font-size: 0.5rem;
+    margin-top: 0rem !important;
+    line-height: 0.7rem !important;
+  }
+
+  .spirits {
+    padding-bottom: 3rem !important;
+    padding-top: 3rem !important;
+  }
+  .home-slider-item {
+    height: 160px !important;
+    width: 190px !important;
+    border-radius: 10px;
+    background-color: transparent;
+  }
+  .roadmap-contents {
+    color: var(--primary-color) !important;
+    border-left: var(--primary-color) solid 5px;
+    padding-left: 1.5rem;
+    margin-bottom: 2.5rem !important;
+    margin-left: 0.5rem;
+  }
+  .sango-image img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .spirit-intro {
+    font-weight: 700;
+    font-size: 2.8rem !important;
+    line-height: 1.1rem !important;
+    padding-left: 0rem !important;
+  }
+  .spirit-intro2 {
+    font-size: 2.8rem !important;
+    line-height: 6rem !important;
+    font-weight: 700;
+  }
+  .home-slider-item {
+    height: 110px !important;
+    width: 135px !important;
+    border-radius: 10px;
+    background-color: transparent;
+  }
+  .sango .back-text {
+    position: absolute;
+    top: 5.5rem !important;
+    text-align: center;
+    width: 100%;
+    z-index: -1;
+    font-family: 'zilap africa';
+    color: var(--primary-color);
+    font-size: 3.5rem !important;
+    font-weight: 800;
+  }
+  .sango .front-cards {
+    bottom: 1rem !important;
+  }
+  .sango-card {
+    margin-right: 0.8rem !important;
+    font-size: 0.5rem !important;
+    width: 2.5rem !important;
+    height: 3rem !important;
+    display: grid;
+    place-items: top !important;
+  }
+  .sango-card h2 {
+    font-weight: 600;
+    font-size: 0.5rem !important;
+    margin-bottom: 0rem !important;
+    line-height: 1.3rem !important;
+  }
+  .sango-card p {
+    font-weight: 500;
+    font-size: 0.5rem;
+    margin-top: 0rem !important;
+    line-height: 0.7rem !important;
+  }
+  .sango-image img {
+    width: 100%;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-color);
+  font-weight: 400;
+
+  margin-top: 0;
+  color: var(--primary-color);
+}
+
+h1 {
+  font-size: 36px;
+  line-height: 42px;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+h4 {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+h5 {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+h6 {
+  font-size: 12px;
+  line-height: 14px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 30px;
+}
+
+a,
+button {
+  color: inherit;
+  display: inline-block;
+  line-height: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+figcaption {
+  font-size: large;
+  color: #6c757d;
+  font-weight: 800;
+}
+
+.navbar {
+  background-color: transparent !important;
+  color: var(--text-color) !important;
+}
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-text {
+  color: var(--text-color) !important;
+}
+.navbar-light .navbar-toggler {
+  border-color: 0;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+  border: 0;
+}
+
+.toggler-icon {
+  width: 30px;
+  height: 3px;
+  background-color: var(--primary-color);
+  display: block;
+  transition: all 0.4s;
+}
+
+.navbar-toggler .middle-bar {
+  margin: 5px auto;
+  opacity: 0.01;
+}
+
+.navbar-toggler .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+
+.navbar-toggler .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 10%;
+}
+.navbar-toggler.collapsed .top-bar {
+  transform: rotate(0);
+}
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+}
+.navbar-toggler.collapsed .bottom-bar {
+  transform: rotate(0);
+}
+.nav-item {
+  font-size: larger;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--primary-color) !important;
+}
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-text {
+  color: var(--primary-color) !important;
+}
+.pagebtn {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 7px 14px;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.pagebtn:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border-color: var(--accent-color);
+}
+.pagebtn-2 {
+  width: fit-content;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border-color: var(--accent-color) !important;
+  padding: 7px 14px;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.pagebtn-2:hover {
+  background-color: var(--secondary-color);
+  color: var(--accent-color);
+}
+
+main > section {
+  margin-top: 7rem;
+}
+
+.mint {
+  background-image: url('../images/background.jpg');
+  background-size: cover;
+  object-fit: cover;
+}
+.hero-header {
+  color: var(--primary-color);
+  font-weight: bold;
+  line-height: 70px;
+  font-size: 4rem;
+}
+.spirits {
+  padding-top: 7rem;
+  padding-bottom: 5rem;
+}
+.spirit-intro {
+  font-family: 'zilap africa';
+  font-weight: 700;
+  font-size: 5.5rem;
+  color: var(--primary-color);
+  line-height: 4rem;
+  padding-left: 1.5rem;
+}
+.spirit-intro2 {
+  font-size: 9rem;
+  color: var(--primary-color);
+  line-height: 10rem;
+  font-family: 'zilap africa';
+  font-weight: 700;
+}
+
+.hero-section {
+  margin-top: 50px;
+}
+.email-contact-section {
+  margin-top: 100px;
+}
+.submit-email-form {
+  width: 320px;
+}
+.submit-email-form > input {
+  padding: 7px 14px;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.home-slider {
+  margin-top: 100px;
+}
+.home-buttom-icon {
+  width: fit-content;
+  color: var(--secondary-color);
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.home-slider-item {
+  height: 240px;
+  width: 240px;
+  border-radius: 10px;
+  background-color: transparent;
+}
+.home-slider-item img {
+  width: 100%;
+}
+#collections {
+  margin-bottom: 7rem;
+}
+.home-button {
+  margin-top: 50px;
+}
+.nav-link:hover {
+  border-bottom: var(--primary-color) 4px solid;
+}
+.nav-link.active {
+  border-bottom: var(--primary-color) 4px solid;
+}
+.move-to-top {
+  position: fixed;
+  inset: auto 15px 15px auto;
+  background-color: var(--primary-color);
+  padding: 10px 18px;
+  border: none;
+  border-radius: 50%;
+  z-index: 1000;
+}
+
+.sango {
+  position: relative;
+  z-index: 2;
+}
+
+.sango .back-text {
+  position: absolute;
+  top: 13rem;
+  text-align: center;
+  width: 100%;
+  z-index: -1;
+  font-family: 'zilap africa';
+  color: var(--primary-color);
+  font-size: 13rem;
+  font-weight: 800;
+}
+.sango .front-cards {
+  position: absolute;
+  bottom: 0.2rem;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  z-index: 3;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sango-card {
+  margin-right: 2rem;
+  font-size: 1rem;
+  font-family: 'Andreas';
+  width: 7rem;
+  height: 7rem;
+  background-color: var(--primary-color);
+  border-radius: 0.6rem;
+  display: grid;
+  place-items: center;
+}
+.sango-card h2 {
+  font-weight: 800;
+  font-size: x-large;
+  color: #000000 !important;
+}
+.sango-card p {
+  font-weight: 700;
+  color: #000000 !important;
+}
+.roadmap-header {
+  font-family: 'zilap africa';
+  font-weight: 900;
+  font-size: 3rem;
+  color: var(--primary-color);
+}
+.roadmap-contents {
+  color: var(--primary-color) !important;
+  border-left: var(--primary-color) solid 5px;
+  padding-left: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.journey,
+.benefits {
+  border: none;
+}
+.roadmap-contents > h3,
+p {
+  color: var(--primary-color);
+}
+.roadmap-contents > h3 {
+  margin-top: 0;
+  padding-top: 0;
+}
+.our-team p {
+  color: var(--primary-color);
+  font-size: 12px !important;
+  line-height: 17px;
+}
+
+.head-shot-image {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+}
+.caption caption {
+  width: 100%;
+}
+.head-shot h5 {
+  color: #6c757d;
+}
+#explore {
+  margin-top: 5rem;
+}
+
+.faq-card {
+  border-radius: 5px;
+  margin-bottom: 10px !important;
+}
+.faq-card > div {
+  padding: 10px;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.faq-card .card-body {
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+.faq-card hr {
+  border: solid 1px #e5e5e5;
+  margin-left: 0.8rem;
+  margin-right: 0.8rem;
+}
+
+.faq-card .add-btn {
+  background-color: transparent;
+  font-size: xx-large;
+  color: var(--primary-color);
+  border: none;
+}
+.faq-card .card-header {
+  display: flex;
+  justify-content: space-between;
+}
+.faq-card .card-header > h4 {
+  padding: 2px;
+  cursor: pointer;
+  width: 100%;
+}
+.hide {
+  display: none;
+}
+.about-header,
+.faq-header,
+.team-header {
+  font-family: 'zilap africa';
+}
+.utility ol {
+  color: var(--primary-color);
+  font-size: large;
+}
+.utility ol li {
+  line-height: 30px;
+}
+.join-discord {
+  background-color: var(--primary-color);
+  color: #000000;
+  font-weight: 600;
+  border-radius: 20px;
+}
+
+.join-discord:hover {
+  background-color: #fff;
+  color: var(--primary-color);
+}

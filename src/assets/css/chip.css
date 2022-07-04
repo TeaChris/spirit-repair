@@ -1,0 +1,12 @@
+.soa-text-icon {
+  font-family: 'Zilap Africa';
+  background-color: var(--primary-color);
+  padding: 8px 6px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  border-radius: 50%;
+}
+.soa-text-icon:hover {
+  background-color: var(--accent-color);
+}
